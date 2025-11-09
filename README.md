@@ -77,6 +77,7 @@ async function handleAccess(blobId) {
 
 ## Sui Move Example
 
+```
 module safevault::access_control {
 
     public fun can_access(user: address, file_id: ID): bool {
@@ -86,4 +87,4 @@ module safevault::access_control {
         return user == owner || user_in_allowlist(user, allowlist);
     }
 }
-
+```
